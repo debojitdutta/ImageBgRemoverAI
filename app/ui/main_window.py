@@ -1,5 +1,5 @@
 from pathlib import Path
-
+from PySide6.QtGui import QIcon
 from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtGui import QPixmap, QImage
 from PySide6.QtWidgets import (
@@ -113,7 +113,11 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle(
-            "BackgroundAI - AI Background Remover"
+            "BackgroundRemoverAI - AI Background Remover"
+        )
+        
+        self.setWindowIcon(
+            QIcon("assets/app_icon.ico")
         )
 
         self.setMinimumSize(1000, 700)
@@ -143,7 +147,7 @@ class MainWindow(QMainWindow):
         # ---------------------------------
 
         title = QLabel(
-            "BackgroundAI"
+            "BackgroundRemoverAI"
         )
 
         title.setAlignment(
@@ -152,7 +156,8 @@ class MainWindow(QMainWindow):
 
         title.setStyleSheet("""
             QLabel {
-                font-size: 30px;
+                font-family: "Orange Avenue Outline DEMO";
+                font-size: 32px;
                 font-weight: bold;
                 padding: 15px;
             }
@@ -172,8 +177,9 @@ class MainWindow(QMainWindow):
 
         subtitle.setStyleSheet("""
             QLabel {
+                font-family: "Orange Avenue DEMO";
                 color: #999999;
-                font-size: 14px;
+                font-size: 20px;
             }
         """)
 
@@ -194,6 +200,12 @@ class MainWindow(QMainWindow):
         original_group_layout = QVBoxLayout(
             original_group
         )
+        
+        original_group.setStyleSheet("""
+            QLabel {
+                font-family: "Orange Avenue DEMO";
+                }
+                """)
 
         self.original_label = ImageLabel(
             "No image selected"
@@ -326,7 +338,7 @@ class MainWindow(QMainWindow):
         # ---------------------------------
 
         self.status_label = QLabel(
-            "Ready"
+            "Ready✅"
         )
 
         self.status_label.setAlignment(
