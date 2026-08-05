@@ -113,7 +113,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle(
-            "BackgroundRemoverAI - AI Background Remover"
+            "BackgroundRemover.AI - AI Background Remover"
         )
         
         self.setWindowIcon(
@@ -147,7 +147,7 @@ class MainWindow(QMainWindow):
         # ---------------------------------
 
         title = QLabel(
-            "BackgroundRemoverAI"
+            "BackgroundRemover.AI"
         )
 
         title.setAlignment(
@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
         title.setStyleSheet("""
             QLabel {
                 font-family: "Orange Avenue Outline DEMO";
-                font-size: 32px;
+                font-size: 40px;
                 font-weight: bold;
                 padding: 15px;
             }

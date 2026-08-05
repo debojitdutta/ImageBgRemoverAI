@@ -25,7 +25,7 @@ def main():
         app.setFont(
             QFont(
                 font_family,
-                14
+                10
                 )
             )
         
