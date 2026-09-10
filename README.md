@@ -225,18 +225,4 @@ Planned improvements may include:
 
 ---
 
-## 📄 License
-
-This project is currently under development. License information will be added in a future release.
-
----
-
-## 👨‍💻 Author
-
-**Debojit Dutta**
-
-GitHub: https://github.com/debojitdutta
-
----
-
 ⭐ If you find this project useful, consider giving the repository a star!
